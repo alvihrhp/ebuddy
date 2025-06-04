@@ -3,12 +3,12 @@
     "database": "(default)",
     "location": "us-central1",
     "rules": "firestore.rules",
-    "indexes": "firestore.indexes.json"
+    "indexes": "firestore.indexes.json",
+    "port": 8080
   },
   "functions": {
-    "source": ".",
-    "runtime": "nodejs22",
-    "predeploy": ["npm run build"]
+    "source": "./core",
+    "port": 5001
   },
   "emulators": {
     "auth": {

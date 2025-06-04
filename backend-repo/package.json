@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "ts-node core/app.ts",
     "serve": "npm run build && firebase emulators:start --only functions",
-    "build": "tsc && cp .env dist/.env",
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
